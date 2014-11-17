@@ -1,0 +1,15 @@
+#TO FIND THE EACH COLUMN MEAN VALUE AFTER REMOVING THE NAs
+
+sapply(s, function(x) mean(x[,2], na.rm=TRUE))
+
+# SPLIT
+ s <- split(airquality, airquality$Month)
+
+#TO FIND THE EACH COLUMN MEAN VALUE AFTER REMOVING THE NAs
+
+sapply(s, function(x) colSums(x, na.rm=TRUE))
+
+
+with(mtcars, tapply(mpg, cyl, mean))
+
+ sapply(split(mtcars$mpg, mtcars$cyl), mean)
