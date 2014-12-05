@@ -10,4 +10,5 @@ getPlot3<- function(pathToFile){
   axis(1, c(0,1500, 2900), c("thu", "fri", "sat"))
   axis(2, c(0,10,20,30), c("0","10","20","30"))
   dev.off()
+
 }

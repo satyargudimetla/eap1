@@ -7,4 +7,5 @@ getPlot2<- function(pathToFile){
   axis(2, c(0,2,4,6), c("0","2","4","6"))
   dev.off()
   rm(x) 
+<<<<<<< HEAD
 }

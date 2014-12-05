@@ -5,4 +5,5 @@ getPlot1<- function(pathToFile){
   hist(x$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power(kilowats)")
   dev.off()
   rm(x) 
+
 }
