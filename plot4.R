@@ -16,9 +16,9 @@ getPlot4<- function(pathToFile){
   axis(2, c(234,236,242,246), c("234","236","242","246"))
   
   with(x, plot(x$datetime , x$Sub_metering_1, type="n",  ylab="Energy Sub Metering", xlab="", axes=FALSE, frame=TRUE))
-  with(x , points(x$Sub_metering_1, col="black", type="l"))
-  with(x , points(x$Sub_metering_2, col="red", type="l"))
-  with(x , points(x$Sub_metering_3, col="blue", type="l"))
+  with(x , points(x$datetime,x$Sub_metering_1, col="black", type="l"))
+  with(x , points(x$datetime,x$Sub_metering_2, col="red", type="l"))
+  with(x , points(x$datetime, x$Sub_metering_3, col="blue", type="l"))
   legend("topright", pch="-", col=c( "black", "red", "blue"), legend = c( "Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
   axis(1, c(0,1500, 2900), c("thu", "fri", "sat"))
   axis(2, c(0,10,20,30), c("0","10","20","30"))
